@@ -7,13 +7,13 @@ The intent of the README.md as stated is :
 
 There is a single script - run_analysis.R in the repo.The following is the detail of the documentation of that script.
 
-1.	The run_analysis.R code has 16 steps in all – Step 0 thru Step 15.
+1.	The run_analysis.R code has 17 steps in all – Step 0 thru Step 16.
 2.	The goals of the project are achieved as outlined in A – E
 3.	The goals are clearly stated in the header section of the code as part of main documentation.
 4.	The 17 steps are spread in  the codebase. 
 5.	The data source and descriptions  for the project data are:
-https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
-http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+Data -> https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+Description - > tttp://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 The Goals and Steps are listed below:
 I.	Goals.
