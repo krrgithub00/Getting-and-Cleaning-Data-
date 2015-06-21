@@ -1,0 +1,53 @@
+Actual Code of the project.
+Here is the documentation of the code:
+
+
+The intent of the README.md is :
+“You should also include a README.md in the repo with your scripts. This repo explains how all of the scripts work and how they are connected. “
+
+1.	The run_analysis.R code has 16 steps in all – Step 0 thru Step 15.
+2.	The goals of the project are achieved as outlined in A – E
+3.	The goals are clearly stated in the header section of the code as part of main documentation.
+4.	The 17 steps are spread in  the codebase. 
+5.	The data source and descriptions  for the project data are:
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+  The Goals and Steps are listed below:
+I.	Goals.
+A:Merge the training and the test sets to create one data set. 
+ Step 13:Result of merged data set for Test and Train data.
+B:Extract only the measurements on the mean and standard deviation for each measurement. 
+ Step 5:Mean & Std Dev mesaures extraction for Test Data. 
+Step 9:Mean & Std Dev mesaures extraction for Train Data.
+C:Uses descriptive activity names to name the activities in the data set
+Step 6:Test data descriptive activity names
+Step 11 :Train data descriptive activity names
+D:Appropriately labels the data set with descriptive variable names.
+Step 14: Implemented via the idenity_labels variable.
+E:From the data set in step 4,creates a second, independent tidy data set 
+ with the average of each variable for each activity and each subject.
+  Step 15: A tidy data set (tidy_data) with  mean /average is created.
+
+II.	The 17 steps in the code are listed below:
+
+  Step 0: Housekeeping  - cleanup your working directory, make sure data.table,reshape2 packages are installed
+Step 1: Define the packages and libraries that are required upfront.
+ Step 2: Store the Activity labels("WALKING", "WALKING_UPSTAIRS" etc) 
+         in a variable.This is for the data to be importted in step3 and step8 
+Step 3 :Import & Load the X, y and subject test data sets into tables.
+tep 4: extract the text  "mean" &  "std" (for standard deviation) of the measurements using grepl 
+  to create a logical vector. TRUE value for id, mean and stddev cols and FALSE for other columns
+Step 5: extract the measurements on the mean and standard deviation for each measurement
+Step 6 Load the Activity labels, assign the labels and subject to the dataset. 
+Step 7: Bind the test dataset
+Step 8: Process the Train data sets for X,y and subject.
+Step 9: extract the measurements on the mean and standard deviation for each measurement
+Step 11 Load the Activity labels, assign the labels and subject to the dataset.
+Step 12: Bind the train dataset
+Step 13 : Now merge the test and train data post the two cbind's
+    and clean up the variable names
+Step 14 : Now apply the labels to the cols and data to the merged data set
+Step 15 : Now apply the mean function to the melt dataset using the dcast function to create a tidy dataset
+Step 16 : Save/Write the tidy data set to a file
+
